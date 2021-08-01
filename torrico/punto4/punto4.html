@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        do {
+            let dni = prompt("Ingrese su DNI: ");
+            dni = parseInt(dni);
+
+            if (isNaN(dni) == false) {
+                if (dni > 0 && dni <= 99999999) {
+                    resto = dni % 23;
+                    switch (resto) {
+                        case 0:
+                            alert("T");
+                            break;
+                        case 1:
+                            alert("R");
+                            break;
+                        case 2:
+                            alert("W");
+                            break;
+                        case 3:
+                            alert("A");
+                            break;
+                        case 4:
+                            alert("G");
+                            break;
+                        case 5:
+                            alert("M");
+                            break;
+                        case 6:
+                            alert("Y");
+                            break;
+                        case 7:
+                            alert("F");
+                            break;
+                        case 8:
+                            alert("P");
+                            break;
+                        case 9:
+                            alert("D");
+                            break;
+                        case 10:
+                            alert("X");
+                            break;
+                        case 11:
+                            alert("B");
+                            break;
+                        case 12:
+                            alert("N");
+                            break;
+                        case 13:
+                            alert("J");
+                            break;
+                        case 14:
+                            alert("Z");
+                            break;
+                        case 15:
+                            alert("S");
+                            break;
+                        case 16:
+                            alert("Q");
+                            break;
+                        case 17:
+                            alert("V");
+                            break;
+                        case 18:
+                            alert("H");
+                            break;
+                        case 19:
+                            alert("L");
+                            break;
+                        case 20:
+                            alert("C");
+                            break;
+                        case 21:
+                            alert("K");
+                            break;
+                        case 22:
+                            alert("E");
+                            break;
+                        default:
+                            alert("No corresponde. Tiene que ser un numero entre 0 y 22")
+                            break;
+                    }
+                }
+            } else {
+                alert("No es un numero.")
+            }
+        } while (confirm("¿Desea seguir?"));
+
+        document.write("Fin del programa");
+    </script>
+</body>
+</html>

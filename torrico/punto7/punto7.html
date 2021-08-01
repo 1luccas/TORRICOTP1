@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        for (let n = 1; n <= 500; n++) {
+                document.write(n);
+                if (n % 36 == 0) {
+                    document.write(" es multiplo de 4 y de 9");
+                } else {
+                    if (n % 4 == 0) {
+                        document.write(" es multiplo de 4");
+                    }
+                    if (n % 9 == 0) {
+                        document.write(" es multiplo de 9");
+                    }
+                }
+                document.write("<br>");
+                if (n % 5 == 0) {
+                    document.write("<hr>")
+                }
+
+            }
+    </script>
+</body>
+</html>

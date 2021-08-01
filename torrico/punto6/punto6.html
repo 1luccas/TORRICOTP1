@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let num = prompt("Ingresa un numero: ");
+        num = parseInt(num);
+
+        if (isNaN(num) == false && num != 0) {
+            for (let n = num; n >= 1; n--) {
+                for (let esc = n; esc >= 1; esc--) {
+                    document.write(n);
+                }
+                document.write("<br>");
+            }
+        } else {
+            alert("No corresponde.");
+        }
+    </script>
+</body>
+</html>
